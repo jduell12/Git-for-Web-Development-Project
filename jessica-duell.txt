@@ -24,21 +24,44 @@ https://codepen.io/jvduell/pen/YzyYJqG?editors=1100
 9. How many times can I use the same id on a page? 
     Only once. 
 10. What is a class? 
-    
+    An identifier for elements you want to have the same style
 11. What elements can I add a class to? 
+    Any element. 
 12. How many times can I use the same class on a page? 
+    You can use the same class multiple times on a page. 
 13. How do I get my link to open in a new tab?
+    Place target="_blank" within the link tag 
 14. What is the alt attribute in the image tag used for? 
+    Used for screen readers and search engines to know what the image is.
 15. How do I reference an id?
+    With # followed by the name of the id 
 16. What is the difference between a section and a div
+    A section tag defines a section in the document similar to chapters in books.
+    A div tag tag defines a division in the HTML. 
+    Div tags tend to be used for presentational HTML while sections are used for semantic HTML 
 17. What is CSS used for? 
+    To style a particular HTML doc
 18. How to we select an element? Example - every h2 on the page
+    You write it's tag followed by curly braces. 
+    ex. h2{}
 19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A class is used for elements you want styled the same while an id is used to pinpoint a particular and unique element. 
+    If you want every other paragraph to be blue you would put a class in every other paragraph and call that class to turn them blue.
+    If you want the second title of the page styled a certain way but no other elements that are of the same tag then you would use an id to grab that element and style it. 
 20. How do we select classes in CSS?
+    With a . followed by curly braces
+    ex. 
+        .class{}
 21. How do we select a p element with a single class of “human””?
+    p.human{}
 22. What is a parent child selector? When would this be useful? 
+    It selects all elements that are a direct child of the specified element
+    If you wanted to get the last child element but didn't know the exact number of child elements
 23. How do you select all links within a div with the class of sidebar?
+    div a.className{}
 24. What is a pseudo selector?
+    It's a keyword added to a selector to define a particular state
+    ex. :hover
 25. What do we use the change the spacing between lines?
 26. What do we use to change the spacing between letters?
 27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
