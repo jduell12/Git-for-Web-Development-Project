@@ -2,83 +2,155 @@ https://codepen.io/jvduell/pen/YzyYJqG?editors=1100
 
 1. What is Semantic HTML? 
     HTML that gives meaning to the information within the webpage
+
 2. What is HTML used for? 
     To give the structure to a webpage which includes all the information you want the webpage to display
+
 3. What is an attribute and where do we put it? 
     It is something that provides additional information about a tag.
     We put it within the tag itself.
     For example the href attribute will go into the a tag:
         <a href="#"></a>
+
 4. What is the h1 tag used for? How many times should I use it on a page?
     It is used to mark an important heading. 
     You should use it once on a page.
+
 5. Name two tags that have required attributes
     a tag 
     img tag 
+
 6. What do we put in the head of our HTML document? 
     Metadata which includes the document title, character set, styles, scripts, etc. 
+
 7. What is an id? 
     An identifier for a particular element 
+
 8. What elements can I add an id to? 
     You can add an id to any element.
+
 9. How many times can I use the same id on a page? 
     Only once. 
+
 10. What is a class? 
     An identifier for elements you want to have the same style
+
 11. What elements can I add a class to? 
     Any element. 
+
 12. How many times can I use the same class on a page? 
     You can use the same class multiple times on a page. 
+
 13. How do I get my link to open in a new tab?
     Place target="_blank" within the link tag 
+
 14. What is the alt attribute in the image tag used for? 
     Used for screen readers and search engines to know what the image is.
+
 15. How do I reference an id?
     With # followed by the name of the id 
+
 16. What is the difference between a section and a div
     A section tag defines a section in the document similar to chapters in books.
     A div tag tag defines a division in the HTML. 
     Div tags tend to be used for presentational HTML while sections are used for semantic HTML 
+
 17. What is CSS used for? 
     To style a particular HTML doc
+
 18. How to we select an element? Example - every h2 on the page
     You write it's tag followed by curly braces. 
     ex. h2{}
+
 19. What is the difference between a class and an id? - Give me an example of when I might use each one
     A class is used for elements you want styled the same while an id is used to pinpoint a particular and unique element. 
     If you want every other paragraph to be blue you would put a class in every other paragraph and call that class to turn them blue.
     If you want the second title of the page styled a certain way but no other elements that are of the same tag then you would use an id to grab that element and style it. 
+
 20. How do we select classes in CSS?
     With a . followed by curly braces
     ex. 
         .class{}
+
 21. How do we select a p element with a single class of “human””?
     p.human{}
+
 22. What is a parent child selector? When would this be useful? 
     It selects all elements that are a direct child of the specified element
     If you wanted to get the last child element but didn't know the exact number of child elements
+
 23. How do you select all links within a div with the class of sidebar?
     div a.className{}
+
 24. What is a pseudo selector?
     It's a keyword added to a selector to define a particular state
     ex. :hover
+
 25. What do we use the change the spacing between lines?
+    line-height
+
 26. What do we use to change the spacing between letters?
+    letter-spacing
+
 27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase
+    text-transform: lowercase
+    text-transform: capitalize 
+
 28. How do I add a 1px border around my div that is dotted and black?
+    div{
+        border: 1px dotted black;
+    }
+
 29. How do I select everything on the page? 
+    Using the * selector
+
 30. How do I write a comment in CSS?
+    /* A multi-line comment in CSS */
+    \\ A single line comment in CSS
+
 31. How do I find out what file I am in, when I am using the command line? 
+    pwd - print working directory
+
 32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls - list (won't show any hidden files that begin with a .)
+
 33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm fileName 
+    The command line won't prompt if you're sure before deleting the file and there's no way to recover the file once it's been deleted from the command line
+
 34. Why should I use version control? 
+    It tracks every change made to a particular project. If you need to revert back to a previous version you can.
+    It also helps keep track of changes made by each person working on a particular project and helps to prevent conflict within the project. 
+
+
 35. How often should I commit to github?
+    After every major change.
+
 36. What is the command we would use to push our repo up to github? 
+    git push -u origin 'branch-name'
+
 37. Walk me through Lambda's git flow. 
+    1. Create your own repo from the project (fork a personal copy of the repo into your account)
+    2. Add TL as collaborator on the forked repo
+    3. Clone the repo by clicking the clone button in Github and copying the url for the repo
+    4. In the command line you navigate to where you want the repo to be and then type the command git clone url
+    5. cd into the new repo 
+    6. Use the command git checkout -b 'firstname-lastname' to create a personal branch 
+    7. To add changes made to the repo type the command git add . into the terminal from within the repo
+    8. Type the command git commit -m "helpful message" to commit the changes
+    9. Type the command git push -u origin branch-name to push the commits to github
+    10. To create a pull request go to github and click on the Branch:master and change it to your branch 
+    11. Click the New pull request button 
+    12. Click the dropdown button that says base repository and change it to your forked repo 
+    13. Add your TL as a Reviewer 
+    14. Give your pull request a descriptive title and description
+    15. Submit the pull request 
 
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
+    
 2. What happens when an element is positioned absolutely? 
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
